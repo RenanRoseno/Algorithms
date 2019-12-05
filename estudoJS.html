@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicios</title>
+	<script type="text/javascript">
+
+		// Factory function
+		
+		function criarProduto(nome, preco, codigo){
+			return { 
+					nome : nome,
+					preco : preco,
+					codigo : codigo
+			}
+		}
+
+	</script>
+</head>
+<body>
+		<form name="heu">
+		<input type="text" name="heu1">
+		<input type="submit">
+	</form>
+
+	<script type="text/javascript">	
+
+		
+		console.log(criarProduto('Leite', 5.00, '904785'))
+	
+	//--------------Funções anônimas
+	
+		let a = (x, y) => { return x + 7 }
+		console.log(a(15,9))
+		document.write(a(22, 90))
+		const mult = (a = 5,b = 5) => { return a * b}
+		console.log(mult())
+	
+	//------------- Callback
+
+		var a1 = [10,3,4,5,6,7]
+
+		let b = a1.filter((nota) => {return nota < 7})
+		a1[0] = 10
+		a1[1] = 90
+		document.write("\n"+ `${a1[1]}  ${b}`)
+
+
+		document.heu.heu1.value= ("sjkdh")
+	</script>
+
+</body>
+</html>
+
+
+
